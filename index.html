@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finance Club — Master money. Build wealth. For students who think like investors.">
+  <title>Finance Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Finance Club home" data-route="home">Finance Club</a>
+      <nav class="nav" aria-label="Main">
+        <div class="nav-dropdown">
+          <a href="#about" class="nav-link nav-dropdown-toggle" data-route="about">
+            About
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="#about" data-route="about" class="dropdown-overview">Overview</a>
+            <a href="#about/club" data-route="about/club">Club</a>
+            <a href="#about/team" data-route="about/team">Team</a>
+            <a href="#about/testimonials" data-route="about/testimonials">Testimonials</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#olympiad" class="nav-link nav-dropdown-toggle" data-route="olympiad">
+            Economics Olympiad
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="#olympiad" data-route="olympiad" class="dropdown-overview">Overview</a>
+            <a href="#olympiad/regulations" data-route="olympiad/regulations">Regulations</a>
+            <a href="#olympiad/stages" data-route="olympiad/stages">Stages</a>
+            <a href="#olympiad/awards" data-route="olympiad/awards">Awards</a>
+          </div>
+        </div>
+        <a href="#contacts" class="nav-link" data-route="contacts">Contacts</a>
+        <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="btn btn-register">Register</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Home Page -->
+    <section class="page page-home active" id="page-home">
+      <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+          <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="hero-inner">
+          <h1 class="hero-headline">Master money. Build wealth.</h1>
+          <p class="hero-subhead">For students who want to think like investors—not just pass exams.</p>
+          <div class="hero-cta">
+            <a href="https://t.me/wiutfinclub" target="_blank" rel="noopener" data-route="home" class="btn btn-primary">Join the club</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Trusted by">
+        <div class="trust-inner">
+          <p class="trust-label">Trusted by students and partners at</p>
+          <div class="trust-logos">
+            <span class="trust-logo" aria-hidden="true">University Partners</span>
+            <span class="trust-logo" aria-hidden="true">Career Networks</span>
+            <span class="trust-logo" aria-hidden="true">Finance Leaders</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Key numbers">
+        <div class="metrics-inner">
+          <div class="metric">
+            <span class="metric-value" data-value="500">500+</span>
+            <span class="metric-label">Active members</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">5</span>
+            <span class="metric-label">Years running</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">98%</span>
+            <span class="metric-label">Would recommend</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="benefits">
+        <div class="benefits-inner">
+          <h2 class="section-headline">Why you should care</h2>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <span class="benefit-number">01</span>
+              <h3 class="benefit-title">Real skills, not theory</h3>
+              <p class="benefit-desc">Portfolio workshops, case studies, and live markets—so you can speak the language of finance from day one.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-number">02</span>
+              <h3 class="benefit-title">Network that pays off</h3>
+              <p class="benefit-desc">Connect with peers and professionals who've been there. First internships and referrals often start here.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-number">03</span>
+              <h3 class="benefit-title">Your edge, guaranteed</h3>
+              <p class="benefit-desc">Structured curriculum and mentorship so you're ready for interviews and roles—or your money back.</p>
+            </article>
+          </div>
+          <div class="benefits-cta">
+            <a href="#home" data-route="home" class="btn btn-primary">Get your edge</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof" id="proof">
+        <div class="proof-inner">
+          <h2 class="section-headline">What members say</h2>
+          <div class="proof-visual">
+            <img src="images/IMG_1744.jpg" alt="Finance Club and Olympiad community" loading="lazy" class="proof-image" />
+          </div>
+          <div class="testimonials">
+            <blockquote class="testimonial">
+              <p class="testimonial-quote">"I landed my first internship because of the club's case prep and the referrals I got. Nothing else on campus came close."</p>
+              <footer class="testimonial-author">— <cite>Sarah M.</cite>, Class of '24</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p class="testimonial-quote">"Finally understood how markets actually work—not just textbook definitions. The workshops are the real deal."</p>
+              <footer class="testimonial-author">— <cite>James K.</cite>, Economics</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="join">
+        <div class="cta-inner">
+          <h2 class="cta-headline">One club. One goal. Your move.</h2>
+          <p class="cta-sub">Join 500+ students building their finance edge. Free to apply—limited spots each term.</p>
+          <a href="https://t.me/wiutfinclub" target="_blank" rel="noopener" data-route="home" class="btn btn-primary btn-large">Join the club</a>
+          <ul class="cta-reassurance">
+            <li>No commitment until you're in</li>
+            <li>Secure sign-up · We never sell your data</li>
+            <!-- <li>Money-back guarantee on paid programs</li> -->
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- About - Club Page -->
+    <section class="page page-about-club" id="page-about-club">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">About the Club</h1>
+          <p class="page-subtitle">Our mission, vision, and what drives us</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="content-section">
+          <h2>Our Mission</h2>
+          <p>Finance Club empowers students to master money and build wealth through real-world skills, not just theory. We bridge the gap between academic knowledge and practical finance expertise, preparing students to think like investors from day one.</p>
+          <p>We believe every student deserves access to financial literacy and the tools to build their future—whether they're pursuing careers in finance, starting businesses, or simply managing their own wealth.</p>
+        </div>
+        <div class="content-section">
+          <h2>Our Vision</h2>
+          <p>To become Uzbekistan's leading student finance community, where members gain the skills, network, and confidence to excel in finance careers and make informed financial decisions throughout their lives.</p>
+          <p>We envision a future where every member leaves with not just knowledge, but real connections, portfolio experience, and the edge needed to succeed in competitive finance roles.</p>
+        </div>
+
+        <div class="content-section club-values-section">
+          <h2>What We Stand For</h2>
+          <div class="club-values-grid">
+            <div class="club-value">
+              <h3>Inclusion</h3>
+              <p>Finance is for everyone. We welcome all backgrounds and levels of experience.</p>
+            </div>
+            <div class="club-value">
+              <h3>Practice over theory</h3>
+              <p>We learn by doing: real cases, real markets, real feedback from industry.</p>
+            </div>
+            <div class="club-value">
+              <h3>Community first</h3>
+              <p>Strong networks and mutual support are at the heart of what we build.</p>
+            </div>
+            <div class="club-value">
+              <h3>Impact</h3>
+              <p>From the Economics Olympiad to career placements—we measure success by your growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>What We Do</h2>
+          <div class="what-we-do-grid">
+            <div class="what-we-do-item">
+              <span class="what-we-do-icon">📊</span>
+              <h3>Portfolio workshops</h3>
+              <p>Live market analysis and hands-on portfolio building with peer and mentor feedback.</p>
+            </div>
+            <div class="what-we-do-item">
+              <span class="what-we-do-icon">🏆</span>
+              <h3>Case competitions</h3>
+              <p>Finance challenges and case study contests to sharpen your analytical and presentation skills.</p>
+            </div>
+            <div class="what-we-do-item">
+              <span class="what-we-do-icon">🤝</span>
+              <h3>Networking & mentorship</h3>
+              <p>Events with professionals and alumni, plus one-on-one mentorship for career and growth.</p>
+            </div>
+            <div class="what-we-do-item">
+              <span class="what-we-do-icon">🎯</span>
+              <h3>Interview prep & career</h3>
+              <p>Structured prep for finance interviews and guidance toward internships and full-time roles.</p>
+            </div>
+            <div class="what-we-do-item">
+              <span class="what-we-do-icon">🌍</span>
+              <h3>Economics Olympiad</h3>
+              <p>We promote and support the national Economics Olympiad as official ambassadors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section about-club-cta">
+          <div class="about-cta-inner">
+            <h2>Join the club</h2>
+            <p>Ready to build your finance edge? Reach out and become part of the community.</p>
+            <a href="https://t.me/wiutfinclub" target="_blank" rel="noopener" class="btn btn-primary btn-large">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About - Team Page -->
+    <section class="page page-about-team" id="page-about-team">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Our Team</h1>
+          <p class="page-subtitle">The people behind Finance Club</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="team-hierarchy">
+          <div class="team-level team-level-leadership">
+            <h2 class="team-level-title">Leadership</h2>
+            <div class="team-grid">
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">President</h3>
+                <p class="team-member-role">Club President</p>
+              </div>
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Vice President</h3>
+                <p class="team-member-role">Operations & Strategy</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-level team-level-directors">
+            <h2 class="team-level-title">Directors</h2>
+            <div class="team-grid">
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Academic Director</h3>
+                <p class="team-member-role">Curriculum & Workshops</p>
+              </div>
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Events Director</h3>
+                <p class="team-member-role">Networking & Competitions</p>
+              </div>
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Communications Director</h3>
+                <p class="team-member-role">Marketing & Outreach</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-level team-level-coordinators">
+            <h2 class="team-level-title">Coordinators</h2>
+            <div class="team-grid">
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Workshop Coordinator</h3>
+                <p class="team-member-role">Portfolio & Case Studies</p>
+              </div>
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Mentorship Coordinator</h3>
+                <p class="team-member-role">Alumni Relations</p>
+              </div>
+              <div class="team-member">
+                <div class="team-member-avatar"></div>
+                <h3 class="team-member-name">Olympiad Coordinator</h3>
+                <p class="team-member-role">Economics Olympiad Ambassador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section">
+          <a href="#about/team" data-route="about/team" class="btn btn-secondary">Learn more about our team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About - Testimonials Page -->
+    <section class="page page-about-testimonials" id="page-about-testimonials">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Member Testimonials</h1>
+          <p class="page-subtitle">Real stories from Finance Club members</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"I landed my first internship because of the club's case prep and the referrals I got. Nothing else on campus came close."</p>
+            <footer class="testimonial-author">— <cite>Sarah M.</cite>, Class of '24</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"Finally understood how markets actually work—not just textbook definitions. The workshops are the real deal."</p>
+            <footer class="testimonial-author">— <cite>James K.</cite>, Economics</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"The network I built here opened doors I never expected. Alumni connections led to my current role at a top firm."</p>
+            <footer class="testimonial-author">— <cite>Alex R.</cite>, Finance Major</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"Portfolio workshops gave me confidence to start investing. I'm now managing my own portfolio successfully."</p>
+            <footer class="testimonial-author">— <cite>Maya T.</cite>, Business Student</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"Mentorship program connected me with someone who's now my career advisor. The support here is unmatched."</p>
+            <footer class="testimonial-author">— <cite>David L.</cite>, Class of '25</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">"Case competitions prepared me for interviews. I aced every finance interview thanks to the practice here."</p>
+            <footer class="testimonial-author">— <cite>Emma S.</cite>, Economics</footer>
+          </blockquote>
+        </div>
+        <div class="content-section">
+          <a href="#about/testimonials" data-route="about/testimonials" class="btn btn-secondary">Read more testimonials</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About - Overview Page -->
+    <section class="page page-about" id="page-about">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">About Finance Club</h1>
+          <p class="page-subtitle">Empowering students to master money and build wealth</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="about-at-a-glance content-section">
+          <div class="at-a-glance-inner">
+            <div class="at-a-glance-item">
+              <span class="at-a-glance-icon" aria-hidden="true">👥</span>
+              <span class="at-a-glance-text">Student-led community</span>
+            </div>
+            <div class="at-a-glance-item">
+              <span class="at-a-glance-icon" aria-hidden="true">📊</span>
+              <span class="at-a-glance-text">Workshops & real-world skills</span>
+            </div>
+            <div class="at-a-glance-item">
+              <span class="at-a-glance-icon" aria-hidden="true">🏆</span>
+              <span class="at-a-glance-text">Economics Olympiad & beyond</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-values content-section">
+          <h2>Why Finance Club?</h2>
+          <div class="values-grid">
+            <div class="value-item">
+              <span class="value-icon">🎯</span>
+              <h3>Skills that translate</h3>
+              <p>Real projects, case studies, and market analysis—not just textbooks.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🤝</span>
+              <h3>Network that opens doors</h3>
+              <p>Alumni, industry guests, and peers who become lifelong connections.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🌍</span>
+              <h3>Global opportunities</h3>
+              <p>We support the Economics Olympiad and connect members to international platforms.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">📈</span>
+              <h3>Career-ready</h3>
+              <p>Interview prep, mentorship, and the edge you need for finance roles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-milestones content-section">
+          <h2>Our Journey</h2>
+          <div class="milestones-timeline">
+            <div class="milestone">
+              <span class="milestone-year">Founded</span>
+              <span class="milestone-dot"></span>
+              <p class="milestone-desc">Finance Club started as a small study group with a big goal: make finance accessible and practical for students.</p>
+            </div>
+            <div class="milestone">
+              <span class="milestone-year">Growth</span>
+              <span class="milestone-dot"></span>
+              <p class="milestone-desc">Workshops, case competitions, and industry partnerships turned us into a recognized community on campus.</p>
+            </div>
+            <div class="milestone">
+              <span class="milestone-year">Today</span>
+              <span class="milestone-dot"></span>
+              <p class="milestone-desc">500+ members, Economics Olympiad ambassadorship, and a growing alumni network across firms and borders.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-numbers content-section">
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="about-stat-value">500+</span>
+              <span class="about-stat-label">Active members</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-value">5</span>
+              <span class="about-stat-label">Years running</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-value">98%</span>
+              <span class="about-stat-label">Would recommend</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-value">1</span>
+              <span class="about-stat-label">Goal: your success</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-overview-grid">
+          <div class="about-card">
+            <h2>The Club</h2>
+            <p>Our mission is to bridge the gap between academic knowledge and practical finance expertise. We prepare students to think like investors from day one.</p>
+            <a href="#about/club" data-route="about/club" class="btn btn-secondary">Learn more</a>
+          </div>
+          <div class="about-card">
+            <h2>Our Team</h2>
+            <p>Meet the dedicated leadership, directors, and coordinators who make Finance Club possible. A structured hierarchy ensuring every aspect runs smoothly.</p>
+            <a href="#about/team" data-route="about/team" class="btn btn-secondary">Meet the team</a>
+          </div>
+          <div class="about-card">
+            <h2>Testimonials</h2>
+            <p>Hear from members who've transformed their finance careers through our workshops, networking, and mentorship programs.</p>
+            <a href="#about/testimonials" data-route="about/testimonials" class="btn btn-secondary">Read testimonials</a>
+          </div>
+        </div>
+
+        <div class="about-cta content-section">
+          <div class="about-cta-inner">
+            <h2>Ready to join?</h2>
+            <p>Become part of a community that invests in your growth. Connect with us and get involved.</p>
+            <a href="https://t.me/wiutfinclub" target="_blank" rel="noopener" class="btn btn-primary btn-large">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Economics Olympiad - Main Page -->
+    <section class="page page-olympiad" id="page-olympiad">
+      <div class="page-hero page-hero-olympiad">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Economics Olympiad 2026</h1>
+          <p class="page-subtitle">A Free National Economics Competition for School Students in Uzbekistan</p>
+          <div class="hero-badge">🆓 Participation is completely free of charge</div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="content-section content-intro">
+          <p class="lead-text">Economics Olympiad 2026 is a free national economics competition open to students from public, private, and Presidential schools across Uzbekistan.</p>
+          <p>The Olympiad is jointly organized by <strong>Westminster International University in Tashkent</strong>, <strong>Economic Fundamentals Initiative (EFI)</strong>, and the <strong>National Science Olympiads Center (FOM)</strong>, with the aim of strengthening economic and financial literacy among school students.</p>
+        </div>
+
+        <div class="content-section">
+          <h2>Why Participate?</h2>
+          <div class="why-participate-grid">
+            <div class="why-card">
+              <div class="why-icon">🌍</div>
+              <h3>Compete Globally</h3>
+              <p>Top participants represent Uzbekistan at the International Final Round in Ancient Olympia, Greece—competing against the world's best students.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🏆</div>
+              <h3>Win Awards</h3>
+              <p>Valuable prizes, certificates from WIUT, and an international preparation bootcamp in Almaty, Kazakhstan for finalists.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">✈️</div>
+              <h3>Travel the World</h3>
+              <p>Finalists attend bootcamp in Kazakhstan and compete in Greece—an incredible opportunity to see the world while learning.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">📚</div>
+              <h3>Build Skills</h3>
+              <p>Strengthen your economic and financial literacy through challenging competitions designed by leading institutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Who Can Participate?</h2>
+          <ul class="feature-list">
+            <li>School students aged <strong>14 and above</strong></li>
+            <li>Students from <strong>public, private, and Presidential schools</strong></li>
+            <li>Languages of participation: <strong>Uzbek, Russian, or English</strong></li>
+          </ul>
+        </div>
+
+        <div class="cta-section-inline">
+          <h2>Ready to Compete?</h2>
+          <p>Join hundreds of students across Uzbekistan competing for a chance to represent the country internationally.</p>
+          <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="btn btn-primary btn-large">Register Now</a>
+          <p class="cta-note">Registration deadline: <strong>March 8, 2026</strong></p>
+        </div>
+
+        <div class="content-section">
+          <h2>Quick Links</h2>
+          <div class="quick-links">
+            <a href="#olympiad/stages" data-route="olympiad/stages" class="quick-link-card">
+              <h3>Olympiad Stages</h3>
+              <p>Learn about School Round and National Round</p>
+            </a>
+            <a href="#olympiad/regulations" data-route="olympiad/regulations" class="quick-link-card">
+              <h3>Regulations</h3>
+              <p>Academic integrity and participation rules</p>
+            </a>
+            <a href="#olympiad/awards" data-route="olympiad/awards" class="quick-link-card">
+              <h3>Awards & Prizes</h3>
+              <p>What winners receive</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="content-section olympiad-gallery-section">
+          <h2>Experience the Olympiad</h2>
+          <p class="gallery-intro">Students from Uzbekistan and the region competing, traveling, and representing their countries on the world stage.</p>
+          <div class="olympiad-gallery">
+            <div class="gallery-item gallery-item-large">
+              <img src="images/IMG_1652.jpg" alt="Economics Olympiad participants with national flags" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/IMG_1744.jpg" alt="Uzbekistan team at the Olympiad" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/IMG_1714.jpg" alt="International participants at the Economics Olympiad" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/IMG_1745.jpg" alt="Uzbekistan representatives outdoors" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/IMG_1673.jpg" alt="Team with Uzbekistan flag and event banner" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Economics Olympiad - Regulations Page -->
+    <section class="page page-olympiad-regulations" id="page-olympiad-regulations">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Regulations</h1>
+          <p class="page-subtitle">Academic integrity and participation rules</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="content-section">
+          <h2>Academic Integrity and Responsibility</h2>
+          <p>As the School Round is conducted online, teachers and school administrators are fully responsible for ensuring fair, independent, and transparent testing conditions.</p>
+        </div>
+
+        <div class="content-section warning-section">
+          <h2>Strictly Prohibited</h2>
+          <ul class="warning-list">
+            <li>❌ Use of Artificial Intelligence (AI) tools</li>
+            <li>❌ Use of the internet, external resources, or third-party assistance</li>
+            <li>❌ Any form of misconduct or test manipulation</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Consequences of Violations</h2>
+          <p>If violations are detected:</p>
+          <ul class="feature-list">
+            <li>The student and the responsible staff member will be <strong>immediately disqualified</strong></li>
+            <li>The names of the student, responsible person, and the school principal will be <strong>published on the official Olympiad website</strong></li>
+            <li>The school may be <strong>banned from participating in future Olympiads</strong></li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Registration Requirements</h2>
+          <ul class="feature-list">
+            <li>Each school may register <strong>only once</strong></li>
+            <li>Registration must be completed by a <strong>teacher or school administrator</strong></li>
+            <li><strong>Registration deadline: March 8, 2026</strong></li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Important Information</h2>
+          <div class="info-box">
+            <p><strong>📲 Telegram bot:</strong> <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener">@econ_olympiad2026</a></p>
+            <p><strong>📢 Updates:</strong> <a href="https://t.me/EFIUzbekistan" target="_blank" rel="noopener">t.me/EFIUzbekistan</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Economics Olympiad - Stages Page -->
+    <section class="page page-olympiad-stages" id="page-olympiad-stages">
+      <div class="page-hero page-hero-stages">
+        <div class="hero-decorative-elements" aria-hidden="true">
+          <div class="hero-decor hero-decor-1">🏛️</div>
+          <div class="hero-decor hero-decor-2">🏆</div>
+          <div class="hero-decor hero-decor-3">✈️</div>
+        </div>
+        <div class="page-hero-inner">
+          <h1 class="page-title">Your Journey to Greece</h1>
+          <p class="page-subtitle">Three stages. One goal. International recognition.</p>
+        </div>
+      </div>
+      <div class="page-content stages-content">
+        <!-- Journey Path -->
+        <div class="stages-journey-container">
+          <div class="journey-path">
+            <div class="journey-path-line"></div>
+            <div class="journey-path-dots">
+              <div class="path-dot path-dot-start"></div>
+              <div class="path-dot path-dot-stage1"></div>
+              <div class="path-dot path-dot-stage2"></div>
+              <div class="path-dot path-dot-final"></div>
+            </div>
+          </div>
+
+          <!-- Stage 1 -->
+          <div class="stage-modern stage-modern-1">
+            <div class="stage-modern-icon">
+              <div class="stage-icon-circle stage-icon-1">
+                <span class="stage-icon-number">1</span>
+              </div>
+            </div>
+            <div class="stage-modern-card">
+              <div class="stage-modern-badge">Online</div>
+              <h2 class="stage-modern-title">School Round</h2>
+              <div class="stage-modern-date">
+                <span class="date-icon">📅</span>
+                <span>March 17, 2026</span>
+              </div>
+              <div class="stage-modern-highlight">
+                <div class="highlight-stat">
+                  <span class="stat-big">All</span>
+                  <span class="stat-small">participate</span>
+                </div>
+                <div class="highlight-stat highlight-stat-main">
+                  <span class="stat-big">100</span>
+                  <span class="stat-small">advance</span>
+                </div>
+              </div>
+              <div class="stage-modern-features">
+                <div class="feature-item">
+                  <span class="feature-check">✓</span>
+                  <span>Electronic certificate for all</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✓</span>
+                  <span>Top 3 from each school</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✓</span>
+                  <span>Top 100 nationwide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="stage-modern stage-modern-2">
+            <div class="stage-modern-icon">
+              <div class="stage-icon-circle stage-icon-2">
+                <span class="stage-icon-number">2</span>
+              </div>
+            </div>
+            <div class="stage-modern-card">
+              <div class="stage-modern-badge badge-venue">At WIUT</div>
+              <h2 class="stage-modern-title">National Round</h2>
+              <div class="stage-modern-date">
+                <span class="date-icon">📅</span>
+                <span>April 6, 2026</span>
+              </div>
+              <div class="stage-modern-location">
+                <span class="location-icon">📍</span>
+                <span>Westminster International University in Tashkent</span>
+              </div>
+              <div class="stage-modern-selection">
+                <h3>Selection Criteria</h3>
+                <div class="selection-modern">
+                  <div class="select-item">
+                    <span class="select-label">Presidential schools</span>
+                    <span class="select-value">Top 5</span>
+                  </div>
+                  <div class="select-item">
+                    <span class="select-label">Public & private</span>
+                    <span class="select-value">Top 3</span>
+                  </div>
+                  <div class="select-item">
+                    <span class="select-label">Each region</span>
+                    <span class="select-value">Top 5</span>
+                  </div>
+                  <div class="select-item select-total">
+                    <span class="select-label">Total</span>
+                    <span class="select-value">100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 3 - Final -->
+          <div class="stage-modern stage-modern-final">
+            <div class="stage-modern-icon">
+              <div class="stage-icon-circle stage-icon-final">
+                <span class="stage-icon-trophy">🏆</span>
+              </div>
+            </div>
+            <div class="stage-modern-card stage-card-final-modern">
+              <div class="stage-modern-badge badge-final">International</div>
+              <h2 class="stage-modern-title">Final Round</h2>
+              <div class="stage-modern-date">
+                <span class="date-icon">📅</span>
+                <span>August 10–14, 2026</span>
+              </div>
+              <div class="stage-modern-location location-final">
+                <span class="location-icon">📍</span>
+                <span>Ancient Olympia, Greece</span>
+              </div>
+              <div class="stage-modern-journey">
+                <div class="journey-modern-step">
+                  <div class="journey-modern-icon">✈️</div>
+                  <div class="journey-modern-text">
+                    <strong>Bootcamp in Almaty</strong>
+                    <span>International preparation camp</span>
+                  </div>
+                </div>
+                <div class="journey-modern-arrow">→</div>
+                <div class="journey-modern-step">
+                  <div class="journey-modern-icon">🏛️</div>
+                  <div class="journey-modern-text">
+                    <strong>Compete in Greece</strong>
+                    <span>Represent Uzbekistan internationally</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stage-modern-finalists">
+                <div class="finalists-modern">
+                  <span class="finalists-count">5</span>
+                  <span class="finalists-text">Finalists</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Economics Olympiad - Awards Page -->
+    <section class="page page-olympiad-awards" id="page-olympiad-awards">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Awards & Prizes</h1>
+          <p class="page-subtitle">What awaits the winners</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="awards-grid">
+          <div class="award-card award-card-gold">
+            <div class="award-icon">🥇</div>
+            <h2>Top 5 Finalists</h2>
+            <ul class="feature-list">
+              <li>International preparation bootcamp in <strong>Almaty, Kazakhstan</strong></li>
+              <li>Represent Uzbekistan at the <strong>International Final Round</strong> in Ancient Olympia, Greece (August 10–14, 2026)</li>
+              <li>Compete against the world's top economics students</li>
+              <li>Travel and accommodation included</li>
+            </ul>
+          </div>
+
+          <div class="award-card award-card-silver">
+            <div class="award-icon">🥈</div>
+            <h2>Top Participants</h2>
+            <ul class="feature-list">
+              <li>Valuable prizes and certificates from <strong>Westminster International University in Tashkent (WIUT)</strong></li>
+              <li>Recognition at national level</li>
+              <li>Enhanced academic profile</li>
+            </ul>
+          </div>
+
+          <div class="award-card award-card-bronze">
+            <div class="award-icon">🏅</div>
+            <h2>All Participants</h2>
+            <ul class="feature-list">
+              <li><strong>Electronic certificate</strong> for all School Round participants</li>
+              <li>Recognition of participation</li>
+              <li>Valuable experience and learning opportunity</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Incentives for Schools and Teachers</h2>
+          <div class="info-box">
+            <p>📌 A <strong>special prize</strong> will be awarded to the teacher or school administrator who attracts the highest number of participants nationwide.</p>
+          </div>
+        </div>
+
+        <div class="cta-section-inline">
+          <h2>Ready to Win?</h2>
+          <p>Register now and compete for a chance to represent Uzbekistan internationally.</p>
+          <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="btn btn-primary btn-large">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Page -->
+    <section class="page page-contacts" id="page-contacts">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-subtitle">Get in touch with Finance Club</p>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <h2>General Inquiries</h2>
+            <p>For questions about Finance Club membership, events, or programs.</p>
+            <a href="mailto:info@financeclub.uz" class="contact-link">info@financeclub.uz</a>
+          </div>
+
+          <div class="contact-card">
+            <h2>Economics Olympiad</h2>
+            <p>Questions about registration, stages, or regulations.</p>
+            <div class="contact-links">
+              <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="contact-link">Telegram: @econ_olympiad2026</a>
+              <a href="https://t.me/EFIUzbekistan" target="_blank" rel="noopener" class="contact-link">Updates: t.me/EFIUzbekistan</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h2>Partnerships</h2>
+            <p>Interested in partnering with Finance Club or sponsoring events.</p>
+            <a href="mailto:partnerships@financeclub.uz" class="contact-link">partnerships@financeclub.uz</a>
+          </div>
+
+          <div class="contact-card">
+            <h2>Media & Press</h2>
+            <p>Media inquiries and press releases.</p>
+            <a href="mailto:media@financeclub.uz" class="contact-link">media@financeclub.uz</a>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Follow Us</h2>
+          <div class="social-links">
+            <a href="#" class="social-link">Telegram</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" data-route="home">Finance Club</a>
+          <p class="footer-tagline">Master money. Build wealth.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="footer-column-title">Learn More</h3>
+            <ul class="footer-link-list">
+              <li><a href="#about" data-route="about">About</a></li>
+              <li><a href="#about/club" data-route="about/club">Club</a></li>
+              <li><a href="#about/team" data-route="about/team">Team</a></li>
+              <li><a href="#about/testimonials" data-route="about/testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-column-title">Economics Olympiad</h3>
+            <ul class="footer-link-list">
+              <li><a href="#olympiad" data-route="olympiad">Overview</a></li>
+              <li><a href="#olympiad/stages" data-route="olympiad/stages">Stages</a></li>
+              <li><a href="#olympiad/regulations" data-route="olympiad/regulations">Regulations</a></li>
+              <li><a href="#olympiad/awards" data-route="olympiad/awards">Awards</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3 class="footer-column-title">Quick Links</h3>
+            <ul class="footer-link-list">
+              <li><a href="#contacts" data-route="contacts">Contacts</a></li>
+              <li><a href="#home" data-route="home">Home</a></li>
+              <li><a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener">Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Telegram" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.84 8.678c-.135.608-.48.757-.976.472l-2.696-1.987-1.297 1.247c-.15.15-.276.276-.566.276l.193-2.724 4.99-4.51c.217-.192-.048-.298-.335-.107l-6.17 3.89-2.66-.832c-.58-.18-.595-.58.12-.88l10.4-4.01c.48-.18.9.112.74.68z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-legal">&copy; 2026 Finance Club. All rights reserved.</p>
+      </div>
+    </div>
+    
+  </footer>
+
+  <!-- Image modal (lightbox) -->
+  <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="View image" hidden>
+    <div class="image-modal-backdrop"></div>
+    <button type="button" class="image-modal-close" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <div class="image-modal-content">
+      <img src="" alt="" class="image-modal-img" />
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
