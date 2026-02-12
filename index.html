@@ -55,45 +55,63 @@
   <main id="app">
     <!-- Home Page -->
     <section class="page page-home active" id="page-home">
-      <section class="hero" id="hero">
-        <div class="hero-bg" aria-hidden="true">
-          <div class="hero-shape hero-shape-1"></div>
-          <div class="hero-shape hero-shape-2"></div>
-          <div class="hero-shape hero-shape-3"></div>
-        </div>
-        <div class="hero-inner">
-          <h1 class="hero-headline">Master money. Build wealth.</h1>
-          <p class="hero-subhead">For students who want to think like investors—not just pass exams.</p>
-          <div class="hero-cta">
-            <a href="https://t.me/wiutfinclub" target="_blank" rel="noopener" data-route="home" class="btn btn-primary">Join the club</a>
+      <section class="hero hero-olympiad-promo" id="hero">
+        <div class="olympiad-banner">
+          <div class="olympiad-hero-grid">
+            <div class="olympiad-hero-left">
+              <div class="olympiad-hero-accent" aria-hidden="true"></div>
+              <span class="olympiad-year">2026</span>
+              <h1 class="olympiad-hero-title">Economics Olympiad</h1>
+              <p class="olympiad-hero-tagline">Free national competition for school students. From your school to the world.</p>
+              <div class="olympiad-cta-block">
+                <p class="olympiad-deadline-text">Registration closes <strong>March 8, 2026</strong></p>
+                <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="btn btn-olympiad-main">Register your school</a>
+                <a href="#about" data-route="about" class="olympiad-club-link">Finance Club — Join us</a>
+              </div>
+            </div>
+            <div class="olympiad-hero-right" aria-label="Olympiad stages">
+              <div class="olympiad-stage-card">
+                <span class="olympiad-stage-num">01</span>
+                <h3 class="olympiad-stage-title">School round</h3>
+                <p class="olympiad-stage-date">March 17, 2026</p>
+                <p class="olympiad-stage-meta">Online · All schools</p>
+              </div>
+              <div class="olympiad-stage-connector" aria-hidden="true"></div>
+              <div class="olympiad-stage-card">
+                <span class="olympiad-stage-num">02</span>
+                <h3 class="olympiad-stage-title">National round</h3>
+                <p class="olympiad-stage-date">April 6, 2026</p>
+                <p class="olympiad-stage-meta">Tashkent · WIUT</p>
+              </div>
+              <div class="olympiad-stage-connector" aria-hidden="true"></div>
+              <div class="olympiad-stage-card olympiad-stage-card-final">
+                <span class="olympiad-stage-num">03</span>
+                <h3 class="olympiad-stage-title">International</h3>
+                <p class="olympiad-stage-date">August 10–14, 2026</p>
+                <p class="olympiad-stage-meta">Greece · World stage</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Trusted by">
-        <div class="trust-inner">
-          <p class="trust-label">Trusted by students and partners at</p>
-          <div class="trust-logos">
-            <span class="trust-logo" aria-hidden="true">University Partners</span>
-            <span class="trust-logo" aria-hidden="true">Career Networks</span>
-            <span class="trust-logo" aria-hidden="true">Finance Leaders</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="metrics" aria-label="Key numbers">
-        <div class="metrics-inner">
-          <div class="metric">
-            <span class="metric-value" data-value="500">500+</span>
-            <span class="metric-label">Active members</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">5</span>
-            <span class="metric-label">Years running</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">98%</span>
-            <span class="metric-label">Would recommend</span>
+      <section class="olympiad-partners-section" aria-label="Olympiad partners">
+        <div class="olympiad-partners-inner">
+          <p class="olympiad-partners-heading">In partnership with</p>
+          <div class="olympiad-partners-logos">
+          
+            <div class="partner-logo">
+              <img src="images/partners/wiut.jpg" alt="WIUT" onerror="this.style.display='none';this.nextElementSibling?.classList.add('show')" />
+              <span class="partner-fallback">WIUT</span>
+            </div>
+            <div class="partner-logo">
+              <img src="images/partners/efi.jpg" alt="EFI" onerror="this.style.display='none';this.nextElementSibling?.classList.add('show')" />
+              <span class="partner-fallback">EFI</span>
+            </div>
+            <div class="partner-logo">
+              <img src="images/partners/economics-olympiad.png" alt="Economics Olympiad" onerror="this.style.display='none';this.nextElementSibling?.classList.add('show')" />
+              <span class="partner-fallback">Economics Olympiad</span>
+            </div>
           </div>
         </div>
       </section>
@@ -355,13 +373,15 @@
 
     <!-- About - Overview Page -->
     <section class="page page-about" id="page-about">
-      <div class="page-hero">
+      <div class="page-hero page-hero-about">
         <div class="page-hero-inner">
+          <p class="page-hero-label">Who we are</p>
           <h1 class="page-title">About Finance Club</h1>
           <p class="page-subtitle">Empowering students to master money and build wealth</p>
+          <p class="page-hero-intro">A student-led community where theory meets practice. We run workshops, support the Economics Olympiad, and connect members to careers in finance.</p>
         </div>
       </div>
-      <div class="page-content">
+      <div class="page-content page-content-about">
         <div class="about-at-a-glance content-section">
           <div class="at-a-glance-inner">
             <div class="at-a-glance-item">
@@ -426,42 +446,28 @@
           </div>
         </div>
 
-        <div class="about-numbers content-section">
-          <div class="about-stats">
-            <div class="about-stat">
-              <span class="about-stat-value">500+</span>
-              <span class="about-stat-label">Active members</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-value">5</span>
-              <span class="about-stat-label">Years running</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-value">98%</span>
-              <span class="about-stat-label">Would recommend</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-value">1</span>
-              <span class="about-stat-label">Goal: your success</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-overview-grid">
-          <div class="about-card">
-            <h2>The Club</h2>
-            <p>Our mission is to bridge the gap between academic knowledge and practical finance expertise. We prepare students to think like investors from day one.</p>
-            <a href="#about/club" data-route="about/club" class="btn btn-secondary">Learn more</a>
-          </div>
-          <div class="about-card">
-            <h2>Our Team</h2>
-            <p>Meet the dedicated leadership, directors, and coordinators who make Finance Club possible. A structured hierarchy ensuring every aspect runs smoothly.</p>
-            <a href="#about/team" data-route="about/team" class="btn btn-secondary">Meet the team</a>
-          </div>
-          <div class="about-card">
-            <h2>Testimonials</h2>
-            <p>Hear from members who've transformed their finance careers through our workshops, networking, and mentorship programs.</p>
-            <a href="#about/testimonials" data-route="about/testimonials" class="btn btn-secondary">Read testimonials</a>
+        <div class="about-explore content-section">
+          <h2 class="about-section-headline">Explore</h2>
+          <p class="about-section-sub">Mission, people, and stories from the community.</p>
+          <div class="about-overview-grid">
+            <a href="#about/club" data-route="about/club" class="about-card about-card-club">
+              <span class="about-card-icon" aria-hidden="true">📋</span>
+              <h2>The Club</h2>
+              <p>Our mission, values, and what we do—workshops, Olympiad, and career support.</p>
+              <span class="about-card-link">Learn more</span>
+            </a>
+            <a href="#about/team" data-route="about/team" class="about-card about-card-team">
+              <span class="about-card-icon" aria-hidden="true">👥</span>
+              <h2>Our Team</h2>
+              <p>Leadership, directors, and coordinators who make Finance Club run.</p>
+              <span class="about-card-link">Meet the team</span>
+            </a>
+            <a href="#about/testimonials" data-route="about/testimonials" class="about-card about-card-testimonials">
+              <span class="about-card-icon" aria-hidden="true">💬</span>
+              <h2>Testimonials</h2>
+              <p>Stories from members who've built their edge through the club.</p>
+              <span class="about-card-link">Read testimonials</span>
+            </a>
           </div>
         </div>
 
@@ -477,11 +483,41 @@
 
     <!-- Economics Olympiad - Main Page -->
     <section class="page page-olympiad" id="page-olympiad">
-      <div class="page-hero page-hero-olympiad">
+      <div class="page-hero page-hero-olympiad page-hero-olympiad-overview">
+        <div class="olympiad-partners-strip olympiad-partners-strip-dark">
+          <div class="olympiad-partners-inner">
+            <span class="partner-name">FOM</span>
+            <span class="partner-name">WIUT</span>
+            <span class="partner-name">EFI</span>
+            <span class="partner-name">Economics Olympiad</span>
+          </div>
+        </div>
         <div class="page-hero-inner">
-          <h1 class="page-title">Economics Olympiad 2026</h1>
-          <p class="page-subtitle">A Free National Economics Competition for School Students in Uzbekistan</p>
-          <div class="hero-badge">🆓 Participation is completely free of charge</div>
+          <h1 class="page-title page-title-uz">Iqtisodiyot fanidan Olimpiada</h1>
+          <h2 class="page-title">Economics Olympiad 2026</h2>
+          <p class="page-subtitle">A free national economics competition for school students in Uzbekistan</p>
+          <div class="page-hero-olympiad-dates">
+            <div class="olympiad-dates-col">
+              <p class="olympiad-date"><strong>School round:</strong> March 17, 2026</p>
+              <p class="olympiad-date"><strong>National round:</strong> April 6, 2026</p>
+              <p class="olympiad-date"><strong>International round:</strong> August 10–14, 2026</p>
+            </div>
+            <div class="olympiad-dates-col olympiad-dates-uz">
+              <p class="olympiad-date"><strong>Maktab bosqichi:</strong> 17 Mart, 2026</p>
+              <p class="olympiad-date"><strong>Respublika bosqichi:</strong> 6 Aprel, 2026</p>
+              <p class="olympiad-date"><strong>Xalqaro bosqichi:</strong> 10–14 Avgust, 2026</p>
+            </div>
+          </div>
+          <p class="page-hero-register-text">2026-yil 8-Martigacha maktabingizni ro'yxatdan o'tkazing</p>
+          <p class="page-hero-register-text page-hero-register-en">Register your school before March 8, 2026</p>
+          <div class="page-hero-cta-row">
+            <a href="https://t.me/econ_olympiad2026" target="_blank" rel="noopener" class="btn btn-primary btn-large">Register</a>
+            <div class="page-hero-qr">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Ft.me%2Fecon_olympiad2026" width="120" height="120" alt="QR code for Olympiad registration" loading="lazy" />
+              <span class="hero-qr-label">Scan to register</span>
+            </div>
+          </div>
+          <div class="hero-badge">🆓 Participation is free</div>
         </div>
       </div>
       <div class="page-content">

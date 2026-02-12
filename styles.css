@@ -105,41 +105,43 @@
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: -0.02em;
+    color: var(--color-text);
   }
   
   .nav {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-lg);
   }
   
   .nav-link {
-    font-weight: 500;
-    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text);
     transition: color var(--duration) var(--ease-out);
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     font-family: inherit;
-    font-size: inherit;
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
   }
   
   .nav-link:hover {
-    color: var(--color-text);
+    color: var(--color-accent);
   }
   
   .nav a {
-    font-weight: 500;
-    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text);
     transition: color var(--duration) var(--ease-out);
   }
   
   .nav a:hover {
-    color: var(--color-text);
+    color: var(--color-accent);
   }
   
   .nav-dropdown {
@@ -220,25 +222,21 @@
   
   .btn-register {
     background: linear-gradient(135deg, var(--color-accent) 0%, #d4af37 100%);
-    color: var(--color-text);
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(184, 134, 11, 0.25);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(184, 134, 11, 0.3);
     transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
-    animation: registerPulse 2s ease-in-out infinite;
   }
   
   .btn-register:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(184, 134, 11, 0.35);
-    color: var(--color-text);
+    box-shadow: 0 6px 24px rgba(184, 134, 11, 0.4);
+    color: #fff;
   }
   
-  @keyframes registerPulse {
-    0%, 100% { box-shadow: 0 4px 16px rgba(184, 134, 11, 0.25); }
-    50% { box-shadow: 0 4px 20px rgba(184, 134, 11, 0.4); }
-  }
   
   .menu-toggle {
     display: none;
@@ -373,6 +371,293 @@
   
   .hero-cta {
     margin-top: var(--space-lg);
+  }
+
+  /* ----- Hero: Economics Olympiad — bold split layout ----- */
+  .hero-olympiad-promo {
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: visible;
+    background: var(--color-bg);
+  }
+
+  .hero-olympiad-promo .olympiad-banner {
+    width: 100%;
+    margin-top: 80px;
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    color: var(--color-text);
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    min-height: calc(100dvh - 80px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hero-olympiad-promo .olympiad-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background: radial-gradient(ellipse 80% 70% at 100% 50%, rgba(184, 134, 11, 0.08) 0%, transparent 55%);
+    pointer-events: none;
+  }
+
+  .hero-olympiad-promo .olympiad-banner > .olympiad-hero-grid {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    max-width: var(--container);
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-left {
+    position: relative;
+    padding-left: var(--space-lg);
+  }
+
+  .hero-olympiad-promo .olympiad-hero-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--color-accent) 0%, rgba(184, 134, 11, 0.5) 100%);
+    border-radius: 2px;
+  }
+
+  .hero-olympiad-promo .olympiad-year {
+    display: inline-block;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-title {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: clamp(2.25rem, 5vw + 1.25rem, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--color-text);
+    margin: 0 0 var(--space-md);
+  }
+
+  .hero-olympiad-promo .olympiad-hero-tagline {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-lg);
+    max-width: 32ch;
+  }
+
+  .hero-olympiad-promo .olympiad-cta-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .hero-olympiad-promo .olympiad-deadline-text {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .hero-olympiad-promo .olympiad-deadline-text strong {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+
+  .hero-olympiad-promo .btn-olympiad-main {
+    display: inline-block;
+    background: var(--color-text);
+    color: var(--color-bg);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    padding: 0.875rem 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(26, 25, 23, 0.15);
+    text-decoration: none;
+    transition: background var(--duration) var(--ease-out), transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out);
+  }
+
+  .hero-olympiad-promo .btn-olympiad-main:hover {
+    background: var(--color-accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(184, 134, 11, 0.35);
+  }
+
+  .hero-olympiad-promo .olympiad-club-link {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color var(--duration) var(--ease-out);
+  }
+
+  .hero-olympiad-promo .olympiad-club-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero-olympiad-promo .olympiad-stage-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-md) var(--space-lg);
+    box-shadow: 0 2px 12px rgba(26, 25, 23, 0.06);
+    transition: background var(--duration) var(--ease-out), border-color var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out);
+  }
+
+  .hero-olympiad-promo .olympiad-stage-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(184, 134, 11, 0.12);
+  }
+
+  .hero-olympiad-promo .olympiad-stage-card-final {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, var(--color-surface) 100%);
+    border-color: rgba(184, 134, 11, 0.35);
+  }
+
+  .hero-olympiad-promo .olympiad-stage-card-final:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(184, 134, 11, 0.15);
+  }
+
+  .hero-olympiad-promo .olympiad-stage-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-olympiad-promo .olympiad-stage-title {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .hero-olympiad-promo .olympiad-stage-date {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: 0 0 0.25rem;
+    font-weight: 500;
+  }
+
+  .hero-olympiad-promo .olympiad-stage-meta {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .hero-olympiad-promo .olympiad-stage-connector {
+    width: 2px;
+    height: 12px;
+    margin-left: var(--space-lg);
+    background: linear-gradient(180deg, transparent, var(--color-border));
+    flex-shrink: 0;
+  }
+
+  /* ----- Olympiad partners (separate section below hero) ----- */
+  .olympiad-partners-section {
+    padding: var(--space-xl) var(--space-md);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .olympiad-partners-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .olympiad-partners-heading {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-md);
+  }
+
+  .olympiad-partners-section .olympiad-partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xl) var(--space-2xl);
+  }
+
+  .olympiad-partners-section .partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    max-width: 260px;
+    height: 80px;
+  }
+
+  .olympiad-partners-section .partner-logo img {
+    max-height: 80px;
+    max-width: 240px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .olympiad-partners-section .partner-fallback {
+    display: none;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+
+  .olympiad-partners-section .partner-fallback.show {
+    display: inline;
+  }
+
+  .partner-name {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.02em;
   }
   
   /* ----- Buttons ----- */
@@ -933,6 +1218,100 @@
   .page-hero-olympiad::after {
     background: radial-gradient(circle, rgba(250, 249, 247, 0.08) 0%, transparent 70%);
   }
+
+  .page-hero-olympiad-overview {
+    padding-top: 0;
+  }
+
+  .olympiad-partners-strip-dark {
+    background: rgba(0, 0, 0, 0.25);
+    padding: var(--space-md) var(--space-md) var(--space-lg);
+    position: relative;
+    z-index: 2;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .olympiad-partners-strip-dark::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background: var(--color-text);
+    border-radius: 24px 24px 0 0;
+  }
+
+  .olympiad-partners-strip-dark .partner-name {
+    color: rgba(250, 249, 247, 0.9);
+  }
+
+  .page-hero-olympiad-overview .page-hero-inner {
+    padding-top: var(--space-md);
+  }
+
+  .page-title-uz {
+    font-size: clamp(1.25rem, 3vw + 0.5rem, 1.875rem);
+    margin: 0 0 var(--space-xs);
+    background: linear-gradient(135deg, rgba(250, 249, 247, 0.95) 0%, rgba(212, 175, 55, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-hero-olympiad-dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md) var(--space-xl);
+    max-width: 520px;
+    margin: var(--space-md) auto var(--space-lg);
+    text-align: left;
+  }
+
+  .page-hero-olympiad .olympiad-date {
+    color: rgba(250, 249, 247, 0.9);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .page-hero-olympiad .olympiad-date strong {
+    color: var(--color-bg);
+  }
+
+  .page-hero-register-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .page-hero-register-en {
+    margin-bottom: var(--space-md);
+    color: rgba(250, 249, 247, 0.85);
+    font-weight: 500;
+  }
+
+  .page-hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .page-hero-qr img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background: var(--color-surface);
+    padding: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .page-hero-olympiad .hero-qr-label {
+    color: rgba(250, 249, 247, 0.8);
+  }
   
   .page-hero-inner {
     max-width: var(--container-narrow);
@@ -1164,6 +1543,31 @@
   }
   
   /* About Overview */
+  .page-hero-about .page-hero-inner {
+    max-width: var(--container-narrow);
+  }
+
+  .page-hero-about .page-hero-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-accent);
+    margin: 0 0 var(--space-sm);
+  }
+
+  .page-hero-about .page-hero-intro {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--color-text-muted);
+    margin: var(--space-md) auto 0;
+    max-width: 42ch;
+  }
+
+  .page-content-about .content-section {
+    margin-bottom: var(--space-2xl);
+  }
+
   .about-at-a-glance {
     margin-bottom: var(--space-xl);
   }
@@ -1199,9 +1603,32 @@
   }
   
   .about-values h2,
-  .about-milestones h2,
-  .about-numbers + .about-overview-grid {
+  .about-milestones h2 {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-md);
+  }
+
+  .about-explore {
     margin-top: var(--space-2xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .about-section-headline {
+    font-family: var(--font-head);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .about-section-sub {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-xl);
   }
   
   .values-grid {
@@ -1350,19 +1777,23 @@
   .about-overview-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
+    gap: var(--space-xl);
     max-width: var(--container);
     margin: 0 auto;
   }
   
   .about-card {
+    display: flex;
+    flex-direction: column;
     background: var(--color-surface);
     padding: var(--space-xl);
-    border-radius: 16px;
+    border-radius: 20px;
     border: 1px solid var(--color-border);
-    transition: all var(--duration) var(--ease-out);
+    transition: border-color var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out), transform var(--duration) var(--ease-out);
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
   }
   
   .about-card::before {
@@ -1372,14 +1803,15 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-accent) 0%, transparent 100%);
+    background: var(--color-accent);
     transform: scaleX(0);
+    transform-origin: left;
     transition: transform var(--duration) var(--ease-out);
   }
   
   .about-card:hover {
     border-color: var(--color-accent);
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 48px rgba(26, 25, 23, 0.12);
     transform: translateY(-4px);
   }
   
@@ -1387,19 +1819,48 @@
     transform: scaleX(1);
   }
   
+  .about-card-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: var(--space-md);
+    opacity: 0.9;
+  }
+  
   .about-card h2 {
     font-family: var(--font-head);
     font-weight: 700;
-    font-size: 1.75rem;
-    margin: 0 0 var(--space-md);
+    font-size: 1.5rem;
+    margin: 0 0 var(--space-sm);
     color: var(--color-text);
   }
   
   .about-card p {
-    margin-bottom: var(--space-lg);
-    line-height: 1.7;
+    flex: 1;
+    margin: 0 0 var(--space-md);
+    font-size: 0.9375rem;
+    line-height: 1.65;
     color: var(--color-text-muted);
   }
+  
+  .about-card-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  
+  .about-card-link::after {
+    content: '→';
+    transition: transform var(--duration) var(--ease-out);
+  }
+  
+  .about-card:hover .about-card-link::after {
+    transform: translateX(4px);
+  }
+  
+  .about-card-team::before { background: var(--color-text); }
   
   /* About Club - values & what we do */
   .club-values-grid {
@@ -3361,13 +3822,85 @@
       cursor: pointer;
     }
   
-    .menu-toggle {
-      display: flex;
-    }
-  
-    .hero {
-      padding-top: calc(70px + var(--space-2xl));
-    }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .page-hero-olympiad-dates {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+
+  .page-hero-cta-row {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding-top: calc(70px + var(--space-2xl));
+  }
+
+  .hero-olympiad-promo .olympiad-banner {
+    margin-top: 70px;
+    padding: var(--space-md) var(--space-sm) var(--space-lg);
+    min-height: calc(100vh - 70px);
+    min-height: calc(100dvh - 70px);
+  }
+
+  .olympiad-partners-section .olympiad-partners-logos {
+    gap: var(--space-md) var(--space-lg);
+  }
+
+  .olympiad-partners-section .partner-logo {
+    min-width: 110px;
+    max-width: 180px;
+    height: 64px;
+  }
+
+  .olympiad-partners-section .partner-logo img {
+    max-height: 64px;
+    max-width: 180px;
+  }
+
+  .hero-olympiad-promo .olympiad-cta-block {
+    align-items: center;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-left {
+    padding-left: 0;
+    padding-top: var(--space-md);
+  }
+
+  .hero-olympiad-promo .olympiad-hero-accent {
+    left: 50%;
+    top: 0;
+    bottom: auto;
+    width: 48px;
+    height: 4px;
+    margin-left: -24px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  }
+
+  .hero-olympiad-promo .olympiad-year,
+  .hero-olympiad-promo .olympiad-hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-olympiad-promo .olympiad-hero-tagline {
+    max-width: none;
+  }
+
+  .hero-olympiad-promo .olympiad-stage-connector {
+    margin-left: auto;
+    margin-right: auto;
+  }
   
     .trust-logos {
       flex-direction: column;
